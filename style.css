@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Oswald:wght@200&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+
+html { scroll-behavior: smooth;}
+
+body{
+    background-color: rgb(100, 100, 100);
+    font-size: 100%;
+    overflow-y: hidden;
+}
+
+/** Cabeçalho **/
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 0.8px solid black;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.logo{
+    height: 55px;
+}
+
+/** Menu **/
+
+.menu-cabecalho{
+    display: flex;
+    gap: 25px;
+}
+
+.menu-cabecalho-item{
+    display: flex;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    width: 120px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(82, 82, 82);
+    transition: 0.3s;
+}
+
+.menu-cabecalho-item:hover{
+    border: 1px solid black;
+    border-radius: 80px 80px 35px 35px;
+    transition: 0.2s;
+    background-color: rgb(0, 122, 122);
+}
+
+
+/** Apresentação **/
+
+.apresentacao{
+    background-image: url("img/Fundo-Apresentacao.gif");
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    height: 700px;
+    padding-top: 150px;
+}
+
+.apresentacao-imagem{
+    position: relative;
+    width: 300px;
+    min-width: 200px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.apresentacao-conteudo{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.apresentacao-conteudo-txt{
+    align-self: center;
+    margin: 5px;
+    width: 500px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.apresentacao-conteudo-txt-paragrafo{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.apresentacao-butao{
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    background-color: rgb(175, 222, 223);
+    border: 4px solid #003d3a;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.apresentacao-butao:hover{
+    border: 2px solid #003d3a;
+    border-radius: 40px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.mudar-secao-baixo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*  Quem somos */
+
+.quemsomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background-image: url("img/Fundo-Quemsomos.png");
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    text-align:center;
+}
+
+.quemsomos-conteudo, .quemsomos-conteudo2{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    gap: 50px;
+}
+
+.quemsomos-conteudo{
+    justify-content: flex-start;
+
+}
+.quemsomos-conteudo2{
+    justify-content: flex-end;
+
+}
+
+h2{
+    position: relative;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.quemsomos-conteudo-txt-p{
+    width: 500px;
+    height: 150px;
+    font-size: 18px;
+    border-left: 0.5px dashed black;
+    border-right: 0.5px dashed black;
+    border-radius: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.img-quemsomos-conteudo{
+    width: 220px;
+    height: 220px;
+    margin: 50px;
+}
+
+#linha{
+    height: 1px;
+    width: 80vw;
+    background-color: black;
+    margin: 0px auto;
+}
+
+/* contato */
+
+.contato{
+    height: 630px;
+    background-image: url("img/Fundo-Servicos.png");
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    padding-top: 65px;
+}
+
+.contato-conteudo{
+    display: flex;
+    top: 40%;
+    transform: translate(0%, -50%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.redes{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    font-size: 100px;
+}
+
+
+#face, #inst, #twit{
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#face{
+    background-image: url("img/face.png");
+}
+#inst{
+    background-image: url("img/insta.png");
+}
+#twit{
+    background-image: url("img/twiter.png");
+}
+
+#face:hover{
+    box-shadow: 0px 0px 120px 40px #3B5998;
+    transition: 1s;
+}
+#inst:hover{
+    box-shadow: 0px 0px 120px 40px #D43377;
+    transition: 1s;
+}
+#twit:hover{
+    box-shadow: 0px 0px 120px 40px #1D9BF0;
+    transition: 1s;
+}
+
+footer{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    justify-items: end;
+    text-align: center;
+}
+
+@media (max-width: 870px){
+    body{
+        overflow-y:auto;
+    }
+    .apresentacao{
+        height: 850px;
+    }
+
+    .quemsomos{
+        height: 700px;
+    }
+    .img-quemsomos-conteudo{
+        width: 150px;
+        height: 150px;
+        margin: 0px;
+    }
+    .quemsomos-conteudo, .quemsomos-conteudo2{
+        justify-content: center;
+        gap: 25px;
+    
+    }
+    h2{
+        font-size: 30px;
+    }
+    .quemsomos-conteudo-txt-p{
+        width: 350px;
+        height: 120px;
+        font-size: 13px;
+    }
+
+    .contato{
+        height: 850px;
+    }
+    .redes{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+}
+
+@media (max-width: 500px) {
+    header{
+        flex-direction: column;
+    }
+    .menu-cabecalho-item{
+        width: 110px;
+        height: 45px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .apresentacao-imagem{
+        width: 200px;
+    }
+
+    .menu-cabecalho{
+        gap: 5px;
+    }
+    .apresentacao-conteudo{
+        gap: 0px;
+    }
+    .apresentacao-imagem{
+        margin: 50px;
+    }
+
+    .img-quemsomos-conteudo{
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .quemsomos-conteudo-txt-p{
+        width: 220px;
+        height: 190px;
+        font-size: 12.5px;
+    }
+    .contato{
+        height: 600px;
+    }
+    .redes{
+        width: 100px;
+        height: 100px;
+    }
+}
